@@ -39,6 +39,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Buy from "./pages/Buy";
 import Register from "./pages/Register";
+import UserDashboard from "./pages/UserDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+
 
 
 
@@ -50,6 +53,8 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/buy" element={<Buy />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<UserDashboard />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
       </Routes>
     </BrowserRouter>
   );
