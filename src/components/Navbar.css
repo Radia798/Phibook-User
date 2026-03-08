@@ -1,0 +1,106 @@
+.navbar{
+  background:white;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:1000;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.navbar-container{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar-logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#4f46e5;
+  text-decoration:none;
+}
+
+.navbar-links{
+  display:flex;
+  gap:30px;
+}
+
+.navbar-links a{
+  text-decoration:none;
+  color:#374151;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.navbar-links a:hover{
+  color:#4f46e5;
+}
+
+/* MOBILE BUTTON */
+
+.mobile-button{
+  display:none;
+}
+
+.mobile-button button{
+  font-size:24px;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+  display:none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+  .navbar-links{
+    display:none;
+  }
+
+  .mobile-button{
+    display:block;
+  }
+
+  .mobile-menu{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    background:white;
+    box-shadow:0 6px 12px rgba(0,0,0,0.08);
+  }
+
+  .mobile-menu a{
+    padding:10px 0;
+    text-decoration:none;
+    color:#374151;
+    font-weight:600;
+  }
+
+  .mobile-menu a:hover{
+    color:#4f46e5;
+  }
+
+}
+
+.logout-btn{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.logout-btn:hover{
+  background:#dc2626;
+}
